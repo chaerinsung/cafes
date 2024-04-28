@@ -56,7 +56,7 @@
 
 			<div class="form-group mb-3 add">
 				<label for="name" class="form-label">cafe:</label>
-				<input type="text" class="form-control" id="name" name="name">
+				<input type="text" class="form-control" id="name" name="name" value="{{ old('name') }}">
                 @error('name')
                     <small class="text-danger">{{ $message }}</small>
                 @enderror
@@ -64,7 +64,7 @@
 
             <div class="form-group mb-3 add">
 				<label for="location" class="form-label">location:</label>
-				<input type="text" class="form-control" id="location" name="location">
+				<input type="text" class="form-control" id="location" name="location" value="{{ old('location') }}">
                 @error('location')
                     <small class="text-danger">{{ $message }}</small>
                 @enderror
@@ -72,7 +72,7 @@
 
 			<div class="form-group mb-3 add">
 				<label for="opening_hours" class="form-label">opening time:</label>
-				<input type="text" class="form-control" id="opening_hours" name="opening_hours" placeholder="00:00 AM/PM format">
+				<input type="text" class="form-control" id="opening_hours" name="opening_hours" placeholder="00:00 AM/PM format" value="{{ old('opening_hours') }}">
                 @error('opening_hours')
                     <small class="text-danger">{{ $message }}</small>
                 @enderror
@@ -80,7 +80,7 @@
 
 			<div class="form-group mb-3 add">
 				<label for="closing_hours" class="form-label">closing time:</label>
-				<input type="text" class="form-control" id="closing_hours" name="closing_hours" placeholder="00:00 AM/PM format">
+				<input type="text" class="form-control" id="closing_hours" name="closing_hours" placeholder="00:00 AM/PM format" value="{{ old('closing_hours') }}">
                 @error('closing_hours')
                     <small class="text-danger">{{ $message }}</small>
                 @enderror
@@ -88,7 +88,7 @@
 
             <div class="form-group mb-3 add">
 				<label for="parking" class="form-label">parking:</label>
-				<input type="text" class="form-control" id="parking" name="parking">
+				<input type="text" class="form-control" id="parking" name="parking" value="{{ old('parking') }}">
                 @error('parking')
                     <small class="text-danger">{{ $message }}</small>
                 @enderror
